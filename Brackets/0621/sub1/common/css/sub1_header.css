@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+#container{width: 100%;margin-top: 140px;}
+#container .contInner{width: 1100px;margin:0 auto;position: relative;}
+#container .contInner .topNav{width: 900px;height: 80px;margin:0 auto;}
+#container .contInner .topNav ul{width: 664px;height: 40px;padding-top: 40px;}
+#container .contInner .topNav ul li{width: 220px;height: 40px;float: left;margin: 20px -1px 0 0;border: 1px solid #ccc;}
+#container .contInner .topNav ul li a{display: block;text-align: center;line-height: 2.7em;font-size: 15px;font-weight: 600;}
+#container .contInner .topNav ul .menu1{}
+#container .contInner .topNav ul .menu2{}
+#container .contInner .topNav ul .menu3{}
+
+
+
+#container .contInner .titleArea{width: 800px;height: 20px;margin:0 auto;border-bottom: 1px solid #ccc;position: absolute;top: 20px;right: 200px;color: #999;font-size: 11px;}
+#container .contInner .titleArea .lineMap{float: right;}
+#container .contInner .contents{}
+
+
+
+
+

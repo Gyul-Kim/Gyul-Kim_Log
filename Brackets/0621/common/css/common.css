@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/*reset*/
+
+/* base */
+body,input,textarea,select,button,table{font-family:'나눔고딕', NanumGothic, ng, sans-serif; font-size:12px; color: #333;}
+*{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+ul,ol,li{list-style:none}
+fieldset,img{border:0; vertical-align:top;}
+address{font-style:normal}
+table{border-collapse: collapse}
+header,footer,nav,section,article,hgroup,aside{display: block}
+p,li,dd{line-height: 1.5em;text-align: justify}
+.hidden{position: absolute;width: 1px; height: 1px; overflow: hidden; left: -1000%; color: #fff}
+
+/* a-style */
+a{color:#333;text-decoration:none}
+a:hover,a:active,a:focus{color:#333;text-decoration:none}
+
+/*layout*/
+#wrap{width: 100%;}
+#headerWrap{width: 100%;height: 140px;background: url(../images/bar.jpg) 0 0 repeat-x;position: fixed;top: 0; left: 0; z-index: 100;}
+
+/*#headerWrap*/
+/*시안 디자인에서 header를 화면 전체로 설정하기 위해서 width값 100%로 설정(백그라운드 이미지, 컬러)*/
+#headerWrap .headerInner{width: 1100px;margin:0 auto;}
+#headerWrap .headerInner .headerTop{height: 85px;}
+/*float:left로 인해서 margin-left: 481px 설정하여 로고를 가운데 위치 시키기(가운데 정렬은 margin:0 auto 설정하나 float:left 때문에 margin-left로 설정 합니다.) */
+#logo{width: 137px;height: 75px;float: left;margin-left: 481px;}
+#logo a{display: block;width: 137px;height: 75px;}
+/*#logo a img{}*/
+
+#headerWrap .headerInner .headerTop .headerIcon{float: right;padding-top: 60px;}
+#headerWrap .headerInner .headerTop .headerIcon li{float: left;margin-right: 15px;}
+#headerWrap .headerInner .headerTop .headerIcon li a{display: block;width: 20px;height: 20px;text-indent: -9999px;}
+
+
+#headerWrap .headerInner .headerTop .headerIcon li:nth-child(1) a{background: url(../images/search.jpg) 0 0 no-repeat;}
+#headerWrap .headerInner .headerTop .headerIcon li:nth-child(1) a:hover{background: url(../images/ho_search.jpg) 0 0 no-repeat;}
+
+
+#headerWrap .headerInner .headerTop .headerIcon li:nth-child(2) a{background: url(../images/profile.jpg) 0 0 no-repeat;} 
+#headerWrap .headerInner .headerTop .headerIcon li:nth-child(2) a:hover{background: url(../images/ho_profile.jpg) 0 0 no-repeat;} 
+#headerWrap .headerInner .headerTop .headerIcon li:nth-child(3) a{background: url(../images/place.jpg) 0 0 no-repeat;} 
+#headerWrap .headerInner .headerTop .headerIcon li:nth-child(3) a:hover{background: url(../images/ho_place.jpg) 0 0 no-repeat;} 
+
+
+#headerWrap .headerInner .headerBottom{width: 1100px;height: 55px;position: relative;}
+#gnb{width: 650px;height: 55px;margin:0 auto;}
+#gnb .gnbMenu{width: 650px;height: 33px;padding-top: 20px;}
+#gnb .gnbMenu>li{float: left;width: 140px;height: 33px;}
+/*position: relative;*/
+#gnb .gnbMenu>li>a{display: block;width: 140px;height: 33px;text-indent: -9999px;}
+/* position: absolute; top:0; left: 0;*/
+#gnb .gnbMenu .m1>a{background:url(../images/header_nav1.jpg) 0 0 no-repeat;}
+#gnb .gnbMenu .m2>a{background:url(../images/header_nav2.jpg) 0 0 no-repeat;}
+#gnb .gnbMenu .m3>a{background:url(../images/header_nav3.jpg) 0 0 no-repeat;}
+#gnb .gnbMenu .m4>a{background:url(../images/header_nav4.jpg) 0 0 no-repeat;}
+
+#gnb .gnbMenu .gnbSubmenu{width: 140px;height: 160px;padding: 15px 0;display: none;}
+#gnb .gnbMenu .gnbSubmenu li{line-height: 2em;text-align: center;}
+#gnb .gnbMenu .gnbSubmenu li a{display: block;color: #630;font-size: 13px;}
+#gnb .gnbMenu .gnbSubmenu li a:hover{font-weight: bold;font-size: 14px;}
+
+
+#headerWrap .menuBox{width: 100%;height: 178px;background-color:#fff;border-bottom: 2px solid #c29a74;display: none;}
+
+
+#footerWrap{width: 100%;height: 180px;background-color: #675e56; margin-top: 100px;}
+#footerWrap .footerInner{width: 1100px;height: 180px;margin:0 auto;}
+#footerWrap .footerInner .footerLeft{width: 20%;height: 170px;padding-top: 10px;float: left;}
+#footerWrap .footerInner .footerLeft .footerLogo{width: 140px;height: 72px;margin: 20px 0 10px 30px;}
+#footerWrap .footerInner .footerLeft .footerLogo a{}
+#footerWrap .footerInner .footerLeft .footerLogo a img{}
+
+#footerWrap .footerInner .footerLeft .footerSns{width: 120px;margin:0 auto;overflow: hidden;}
+#footerWrap .footerInner .footerLeft .footerSns li{float: left;}
+#footerWrap .footerInner .footerLeft .footerSns li a{display: block;width: 32px;height: 32px;text-indent: -9999px;}
+#footerWrap .footerInner .footerLeft .footerSns li:nth-child(1) a{background-image: url(../images/sns_1.png);}
+#footerWrap .footerInner .footerLeft .footerSns li:nth-child(2) a{background-image: url(../images/sns_2.png);}
+#footerWrap .footerInner .footerLeft .footerSns li:nth-child(3) a{background-image: url(../images/sns_3.png);}
+#footerWrap .footerInner .footerLeft .footerSns li:nth-child(1) a:hover{background-image: url(../images/ho_sns1.png);}
+#footerWrap .footerInner .footerLeft .footerSns li:nth-child(2) a:hover{background-image: url(../images/ho_sns2.png);}
+#footerWrap .footerInner .footerLeft .footerSns li:nth-child(3) a:hover{background-image: url(../images/ho_sns3.png);}
+
+
+#footerWrap .footerInner .footerRight{width: 60%;height: 170px;padding-top: 10px;float: left;}
+#footerWrap .footerInner .footerRight ul{}
+#footerWrap .footerInner .footerRight ul li{float: left;margin-right: 10px;border-right: 1px solid #ccc;padding-right: 10px;height: 15px;}
+#footerWrap .footerInner .footerRight ul li a{color: #fff;}
+
+#footerWrap .footerInner .footerRight .footerTxt{clear: both;line-height: 20px;margin-top: 30px;} 
+#footerWrap .footerInner .footerRight .footerTxt .txtBold{font-size: 13px;font-weight: bold;color: #fc3;}
+
+
+
+
+

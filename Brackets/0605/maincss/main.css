@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/*reset*/
+
+/* base */
+body,input,textarea,select,button,table{font-family:'나눔고딕', NanumGothic, ng, sans-serif; font-size:12px; color: #333;}
+*{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+ul,ol,li{list-style:none}
+fieldset,img{border:0; vertical-align:top;}
+address{font-style:normal}
+table{border-collapse: collapse}
+header,footer,nav,section,article,hgroup,aside{display: block}
+p,li,dd{line-height: 1.5em;text-align: justify}
+.hidden{position: absolute;width: 1px; height: 1px; overflow: hidden; left: -1000%; color: #fff}
+
+/* a-style */
+a{color:#333;text-decoration:none}
+a:hover,a:active,a:focus{color:#333;text-decoration:none}
+
+/*layout*/
+#wrap{width: 100%;}
+#headerWrap{width: 100%;height: 140px;background: url(../common/images/bar.jpg) 0 0 repeat-x;position: fixed;top: 0; left: 0; z-index: 100;}
+
+/*#headerWrap*/
+/*시안 디자인에서 header를 화면 전체로 설정하기 위해서 width값 100%로 설정(백그라운드 이미지, 컬러)*/
+#headerWrap .headerInner{width: 1100px;margin:0 auto;}
+#headerWrap .headerInner .headerTop{height: 85px;}
+/*float:left로 인해서 margin-left: 481px 설정하여 로고를 가운데 위치 시키기(가운데 정렬은 margin:0 auto 설정하나 float:left 때문에 margin-left로 설정 합니다.) */
+#logo{width: 137px;height: 75px;float: left;margin-left: 481px;}
+#logo a{display: block;width: 137px;height: 75px;}
+/*#logo a img{}*/
+
+#headerWrap .headerInner .headerTop .headerIcon{float: right;padding-top: 60px;}
+#headerWrap .headerInner .headerTop .headerIcon li{float: left;margin-right: 15px;}
+#headerWrap .headerInner .headerTop .headerIcon li a{display: block;width: 20px;height: 20px;text-indent: -9999px;}
+
+
+#headerWrap .headerInner .headerTop .headerIcon li:nth-child(1) a{background: url(../common/images/search.jpg) 0 0 no-repeat;}
+#headerWrap .headerInner .headerTop .headerIcon li:nth-child(1) a:hover{background: url(../common/images/ho_search.jpg) 0 0 no-repeat;}
+
+
+#headerWrap .headerInner .headerTop .headerIcon li:nth-child(2) a{background: url(../common/images/profile.jpg) 0 0 no-repeat;} 
+#headerWrap .headerInner .headerTop .headerIcon li:nth-child(2) a:hover{background: url(../common/images/ho_profile.jpg) 0 0 no-repeat;} 
+#headerWrap .headerInner .headerTop .headerIcon li:nth-child(3) a{background: url(../common/images/place.jpg) 0 0 no-repeat;} 
+#headerWrap .headerInner .headerTop .headerIcon li:nth-child(3) a:hover{background: url(../common/images/ho_place.jpg) 0 0 no-repeat;} 
+
+
+#headerWrap .headerInner .headerBottom{width: 1100px;height: 55px;position: relative;}
+#gnb{width: 650px;height: 55px;margin:0 auto;}
+#gnb .gnbMenu{width: 650px;height: 33px;padding-top: 20px;}
+#gnb .gnbMenu>li{float: left;width: 140px;height: 33px;}
+/*position: relative;*/
+#gnb .gnbMenu>li>a{display: block;width: 140px;height: 33px;text-indent: -9999px;}
+/* position: absolute; top:0; left: 0;*/
+#gnb .gnbMenu .m1>a{background:url(../common/images/header_nav1.jpg) 0 0 no-repeat;}
+#gnb .gnbMenu .m2>a{background:url(../common/images/header_nav2.jpg) 0 0 no-repeat;}
+#gnb .gnbMenu .m3>a{background:url(../common/images/header_nav3.jpg) 0 0 no-repeat;}
+#gnb .gnbMenu .m4>a{background:url(../common/images/header_nav4.jpg) 0 0 no-repeat;}
+
+#gnb .gnbMenu .gnbSubmenu{width: 140px;height: 160px;padding: 15px 0;display: none;}
+#gnb .gnbMenu .gnbSubmenu li{line-height: 2em;text-align: center;}
+#gnb .gnbMenu .gnbSubmenu li a{display: block;color: #630;font-size: 13px;}
+#gnb .gnbMenu .gnbSubmenu li a:hover{font-weight: bold;font-size: 14px;}
+
+
+#headerWrap .menuBox{width: 100%;height: 178px;background-color:#fff;border-bottom: 2px solid #c29a74;display: none;}
+
+/*visual*/
+/*이미지가 2000px가 넘는다면 margin 0 aout를 넣어주면 되지만
+해상도에 따라 왼쪽으로 붙게 이미지가 짤릴 수 있으므로 left 50%을 넣어주고 시작한다. 그리고 빼도 되는지 확인해봐야함*/
+#visual{margin-top: 140px;width:100%;height: 480px;overflow: hidden; position: relative;}
+#visual .gallery{width: 1000px;height: 480px;margin: auto;}
+#visual .gallery ul{}
+#visual .gallery ul li{}
+#visual .gallery ul li a{}
+#visual .dock{position: absolute;top: 440px;left: 200px;}
+#visual .dock .mbutton{background:url(../images/bnt.png) 0 0 no-repeat;display: block;width: 17px;height: 17px;float: left;margin-right: 5px;}
+#visual .dock .btn6{background:url(../images/stop.png) 0 }
+
+
+/*#contents*/
+#contents{width: 100%;}
+#contents .bestSeller{width: 960px;height: 540px;margin:0 auto;}
+#contents .bestSeller h3{width: 190px;height: 170px;margin:0 auto;}
+#contents .bestSeller h3 a{display: block;width: 190px;height: 30px;padding: 110px 0 30px 0;}
+#contents .bestSeller h3 a img{}
+
+#contents .bestSeller ul{width: 1000px;height: 380px;margin: auto;}
+#contents .bestSeller ul .sell{float: left;margin: 10px 20px 0px 30px;position: relative;}
+#contents .bestSeller ul .sell a{}
+#contents .bestSeller ul .sell a span:nth-child(1){display: block;font-size: 18px;font-weight: 600;position: absolute;top: 256px;left: 42px;color: #fff;letter-spacing: -1px}
+#contents .bestSeller ul .sell a span:nth-child(2){display: block;font-size: 14px;font-weight: 400;position: absolute;top: 290px;left: 40px;color: #fff;letter-spacing: -1px}
+#contents .bestSeller ul .sell a .br{}
+#contents .bestSeller ul .sell .sell1{display: block;width: 270px;height: 355px;background-image: url(../images/bestt1.jpg);}
+#contents .bestSeller ul .sell .sell2{display: block;width: 270px;height: 355px;background-image: url(../images/bestt2.jpg);}
+#contents .bestSeller ul .sell .sell3{display: block;width: 270px;height: 355px;background-image: url(../images/bestt3.jpg);}
+
+#contents .bestSeller ul .sell .sell1:hover{background-image: url(../images/ho_bestt1.jpg);transition:all 0.6s; }
+#contents .bestSeller ul .sell .sell2:hover{background-image: url(../images/ho_bestt2.jpg);transition:all 0.6s;}
+#contents .bestSeller ul .sell .sell3:hover{background-image: url(../images/ho_bestt3.jpg);transition:all 0.6s;}
+
+/*#contents-.foodLine*/
+#contents .foodLine{width: 100%;height: 350px;background-color: #dec7b3;margin-top: 55px;}
+#contents .foodLine h3{width: 200px;height: 110px;margin:0 auto;}
+#contents .foodLine h3 img{display: block;width: 200px;height: 30px;padding: 50px 0 30px 0;}
+#contents .foodLine .foodLineinner{width: 1100px;margin:0 auto;position: relative;}
+#contents .foodLine .foodLineinner .slideFoodbox{width: 750px;height: 200px;margin:0 auto;overflow: hidden;}
+#contents .foodLine .foodLineinner .slideFoodbox .product1{position: relative;left: 0;top: 0;height: 188px;width: 3000px;}
+#contents .foodLine .product1 ul{}
+#contents .foodLine .product1 ul li{float: left;}
+#contents .foodLine .product1 ul li a{}
+#contents .foodLine .product1 ul li a img{}
+
+#contents .foodLine .foodLineinner .btnFoodbox{}
+#contents .foodLine .foodLineinner .btnFoodbox .btn{display: block;text-indent: -9999px;width: 20px;height: 38px;overflow: hidden;position: absolute;top: 50px;}
+#contents .foodLine .foodLineinner .btnFoodbox .m1{background-image: url(../images/wleft-arrow2.png);left: 10px;}
+#contents .foodLine .foodLineinner .btnFoodbox .m2{background-image: url(../images/wright-arrow2.png);right: 10px;}
+
+/*#contents-.foodItems*/
+#contents .foodItems{width: 1100px;margin:0 auto;margin-top: 70px;overflow: hidden;}
+#contents .foodItems .foodList{}
+
+#contents .foodItems .foodList li{float: left;}
+
+#contents .foodItems .foodList .story{width: 300px;height: 500px;margin-left: 60px;}
+/*#contents .foodItems .foodList .story a{}*/
+/*#contents .foodItems .foodList .story a img{}*/
+
+#contents .foodItems .foodList .notice{width: 320px;height: 235px;margin-left: 20px;overflow: scroll;overflow-x: hidden;}
+
+#contents .foodItems .foodList .world{width: 320px;height: 235px;margin-left: 20px;}
+#contents .foodItems .foodList .world a{}
+#contents .foodItems .foodList .world a img{}
+
+#contents .foodItems .foodList .eventSlide{width: 670px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

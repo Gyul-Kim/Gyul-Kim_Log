@@ -1,0 +1,39 @@
+span{font-size: 50px;font-weight:inherit; font-style:italic;line-height:130px;font-family:gulim;text-align:right;}
+/*축약했을 땐 아래처럼 된다!*/
+p{font:inherit 15px/70px gulim;}
+p{font: 1em Arial,sans-serif;text-align: left;}
+/*축약형은 f+ 적고 tab을 누른다!!*/
+/*순서는 상관 없지만 빈칸으로 해놓으면 알아서 인식해줌*/
+
+
+
+
+
+
+
+
+
+
+/*1. font-style : normal italic oblique
+2. font-weight :  normal, bold
+3. font-size : 12px;
+
+등등이 있다.
+
+Typographic
+
+- 명조 Sherif : 우아함, 문화 예술 오락
+- 고딕 Sans Sherif : 임팩트, 딱딱함, 정치 경제 사회
+
+웹에선 판독이 중요하므로 고딕 사용
+(명조는 빛에 반사되기 때문에 지양함)
+- 장평은 알아서 조절됨 (글꼴 사면 됨)
+
+자간, 행장 : 자간은 걍 중요X, 어떤 길이이든 한 줄에 7개 단어가 들어가야 하는게 행장(7내지 10개)
+행간 : 권장이지 필수 X. 100%-250% 라인 헤이트 값 주는게 좋음. 활자높이의 최소 1/2에서 1배까지가 좋음
+라인 헤이트는 글자 사이즈의 2배로 하는게 최고임.
+
+Color : red; or #FF0000; 이런 식으로 줌
+Text-decoration: none; underline; line-through; overline;
+Text-align(글자정렬) : text-align:left; right;
+*/
